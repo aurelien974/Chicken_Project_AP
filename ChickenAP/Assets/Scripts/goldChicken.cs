@@ -3,16 +3,18 @@ using System.Collections;
 
 public class goldChicken : MonoBehaviour {
 
-	private int numberOfGoldChickenFound;
+	public int numberOfGoldChickenFound;
 
 	private particlesGeneration particlesScript;
-	public ParticleSystem particles;
+	private ballMovement ballMvtScript;
 
+	public ParticleSystem particles;
 
 	// Use this for initialization
 	void Start () {
 	
 		particlesScript = transform.GetComponent<particlesGeneration>();
+		ballMvtScript = GetComponent<ballMovement>();
 
 		numberOfGoldChickenFound = 0;
 		particles.startColor = particlesScript.colors[numberOfGoldChickenFound];
@@ -24,17 +26,25 @@ public class goldChicken : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter(Collision col) {
+	void OnTriggerEnter(Collider col) {
 
-		if(col.gameObject.tag == "goldChicken") {
+		if(col.gameObject.tag == "gold chicken") {
 
-			numberOfGoldChickenFound++;
-			//col.gameObject.animation;
+			if(numberOfGoldChickenFound < particlesScript.colors.Length) {
+
+				numberOfGoldChickenFound++;
+
+				ballMvtScript.currentMaxSpeed += ballMvtScript.speedWonByGoldChicken;
+
+				particles.startColor = particlesScript.colors[numberOfGoldChickenFound];
+
+			}
+
+			col.gameObject.GetComponent<Animator>().SetBool("collected", true);
 			col.gameObject.collider.enabled = false;
-			Debug.Log(numberOfGoldChickenFound);
-
 
 		}
 
 	}
+	
 }

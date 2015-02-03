@@ -3,8 +3,10 @@ using System.Collections;
 
 public class ballMovement : MonoBehaviour {
 
-	public float playerSpeed = 40.0f;
-	public float maxSpeed = 120.0f;
+	public float playerSpeedForce = 40.0f;
+	public float maxSpeed = 100.0f;
+	public float currentMaxSpeed;
+	public float speedWonByGoldChicken = 16.0f;
 	public float decreaseFactorOnGround = 1.0f;
 	public float decreaseFactorInAir = 0.1f;
 	public float animationMaxSpeed = 4.0f;
@@ -19,9 +21,13 @@ public class ballMovement : MonoBehaviour {
 
 	private float distToGround;
 
+	private particlesGeneration particlesScript;
+
 	void Start () {
 
 		distToGround = collider.bounds.extents.y;
+		particlesScript = GetComponent<particlesGeneration>();
+		currentMaxSpeed = maxSpeed - (particlesScript.colors.Length - 1) * speedWonByGoldChicken;
 
 	}
 
@@ -40,9 +46,9 @@ public class ballMovement : MonoBehaviour {
 
 		}
 
-		if(rigidbody.velocity.magnitude > maxSpeed) {
+		if(rigidbody.velocity.magnitude > currentMaxSpeed) {
 			
-			rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
+			rigidbody.velocity = rigidbody.velocity.normalized * currentMaxSpeed;
 			
 		}
 
@@ -50,13 +56,13 @@ public class ballMovement : MonoBehaviour {
 
 			if(Mathf.Abs (Input.GetAxis("Vertical")) > 0.2) {
 
-				rigidbody.AddForce(chickenTransform.forward * Input.GetAxis ("Vertical")* playerSpeed);
+				rigidbody.AddForce(chickenTransform.forward * Input.GetAxis ("Vertical")* playerSpeedForce);
 
 			}
 
 			if(Mathf.Abs (Input.GetAxis("Horizontal")) > 0.2) {
 				
-				rigidbody.AddForce(chickenTransform.right * Input.GetAxis ("Horizontal")* playerSpeed);
+				rigidbody.AddForce(chickenTransform.right * Input.GetAxis ("Horizontal")* playerSpeedForce);
 				
 			}
 
