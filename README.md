@@ -1,5 +1,8 @@
 # The Chicken Project
+
 *This is a work for Enjmin for which we learned in a week how to make a chicken with 3ds Max, integrate it in Unity3D and make things with it, add sounds and use Adobe Premiere to make a trailer of all that.*
+
+*Date : 02/2015*
 
 ### If you want to edit the project, follow these instructions to configure Unity Editor (v4.3 and up) :
 
