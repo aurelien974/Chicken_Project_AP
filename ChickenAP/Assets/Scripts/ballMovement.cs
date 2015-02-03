@@ -9,7 +9,10 @@ public class ballMovement : MonoBehaviour {
 	public float decreaseFactorInAir = 0.1f;
 	public float animationMaxSpeed = 4.0f;
 	public float animationMinSpeed = 0.4f;
-	
+	public float respawnDistance = -40.0f;
+
+	public Transform respawnPoint;
+
 	public Animator playerAnimator;
 
 	public Transform chickenTransform;
@@ -22,13 +25,26 @@ public class ballMovement : MonoBehaviour {
 
 	}
 
-	bool IsGrounded () {
+	public bool IsGrounded () {
 
 		return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
 
 	}
 	
 	void FixedUpdate () {
+
+		if(transform.position.y < respawnDistance) {
+
+			rigidbody.velocity = Vector3.zero;
+			transform.position = respawnPoint.transform.position;
+
+		}
+
+		if(rigidbody.velocity.magnitude > maxSpeed) {
+			
+			rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
+			
+		}
 
 		if(IsGrounded()) {
 
@@ -50,15 +66,10 @@ public class ballMovement : MonoBehaviour {
 
 			}
 
+
 		} else {
 
 			rigidbody.AddForce(Vector3.Scale(-rigidbody.velocity, new Vector3(decreaseFactorInAir,0,decreaseFactorInAir)));
-
-		}
-
-		if(rigidbody.velocity.magnitude > maxSpeed) {
-
-			rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
 
 		}
 
