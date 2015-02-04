@@ -10,6 +10,10 @@ public class goldChicken : MonoBehaviour {
 
 	public ParticleSystem particles;
 
+	public string[] godSpotlightActivationOrder;
+
+	private GameObject[] godChickenSpotlights;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -18,6 +22,14 @@ public class goldChicken : MonoBehaviour {
 
 		numberOfGoldChickenFound = 0;
 		particles.startColor = particlesScript.colors[numberOfGoldChickenFound];
+
+		godChickenSpotlights = GameObject.FindGameObjectsWithTag("chicken_god spotlight");
+
+		foreach(GameObject spotlight in godChickenSpotlights) {
+
+			spotlight.light.enabled = false;
+
+		}
 
 	}
 	
@@ -30,13 +42,19 @@ public class goldChicken : MonoBehaviour {
 
 		if(col.gameObject.tag == "gold chicken") {
 
-			if(numberOfGoldChickenFound < particlesScript.colors.Length) {
+			numberOfGoldChickenFound++;
 
-				numberOfGoldChickenFound++;
+			if(numberOfGoldChickenFound < particlesScript.colors.Length) {
 
 				ballMvtScript.currentMaxSpeed += ballMvtScript.speedWonByGoldChicken;
 
 				particles.startColor = particlesScript.colors[numberOfGoldChickenFound];
+
+			}
+
+			if(numberOfGoldChickenFound <= godSpotlightActivationOrder.Length) {
+
+				GameObject.Find ("Spotlight " + godSpotlightActivationOrder[numberOfGoldChickenFound-1]).light.enabled = true;
 
 			}
 

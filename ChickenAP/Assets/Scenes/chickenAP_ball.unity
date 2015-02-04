@@ -115,7 +115,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: d175956860b3d264482973be3c915acf, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d175956860b3d264482973be3c915acf, type: 2}
       propertyPath: m_Layer
@@ -125,7 +125,44 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: d175956860b3d264482973be3c915acf, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: d175956860b3d264482973be3c915acf, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: d175956860b3d264482973be3c915acf, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: d175956860b3d264482973be3c915acf, type: 2}
+      propertyPath: m_Size.y
+      value: 1.14639759
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: d175956860b3d264482973be3c915acf, type: 2}
+      propertyPath: m_Size.z
+      value: 1.29784489
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: d175956860b3d264482973be3c915acf, type: 2}
+      propertyPath: m_Center.x
+      value: .00570259104
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: d175956860b3d264482973be3c915acf, type: 2}
+      propertyPath: m_Center.y
+      value: .12191277
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: d175956860b3d264482973be3c915acf, type: 2}
+      propertyPath: m_Center.z
+      value: .0913412571
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500002, guid: d175956860b3d264482973be3c915acf, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: d175956860b3d264482973be3c915acf, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d175956860b3d264482973be3c915acf, type: 2}
   m_RootGameObject: {fileID: 175250543}
   m_IsPrefabParent: 0
@@ -257,7 +294,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 1
-  m_Color: {r: .985294104, g: .839198768, b: .362240404, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: .699999988
   m_Range: 10
   m_SpotAngle: 30
@@ -349,8 +386,8 @@ GameObject:
   - 4: {fileID: 151152706}
   - 108: {fileID: 151152707}
   m_Layer: 8
-  m_Name: Spotlight
-  m_TagString: Untagged
+  m_Name: Spotlight Right
+  m_TagString: chicken_god spotlight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -362,7 +399,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 151152705}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: .419, y: -.63499999, z: .0110000139}
+  m_LocalPosition: {x: .340999991, y: -.63499999, z: .0109999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 175250544}
@@ -377,7 +414,7 @@ Light:
   serializedVersion: 3
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 6
+  m_Intensity: 8
   m_Range: 40
   m_SpotAngle: 70
   m_CookieSize: 10
@@ -433,6 +470,7 @@ Transform:
   - {fileID: 1875963850}
   - {fileID: 151152706}
   - {fileID: 344073256}
+  - {fileID: 2062730389}
   m_Father: {fileID: 0}
   m_RootOrder: 13
 --- !u!1001 &206274732
@@ -520,8 +558,8 @@ GameObject:
   - 4: {fileID: 344073256}
   - 108: {fileID: 344073257}
   m_Layer: 8
-  m_Name: Spotlight
-  m_TagString: Untagged
+  m_Name: Spotlight Top
+  m_TagString: chicken_god spotlight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -533,7 +571,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 344073255}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 0, y: 1.25, z: .0109999999}
+  m_LocalPosition: {x: 0, y: 1.56799996, z: .0109999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 175250544}
@@ -548,9 +586,9 @@ Light:
   serializedVersion: 3
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 6
-  m_Range: 50
-  m_SpotAngle: 70
+  m_Intensity: 8
+  m_Range: 60
+  m_SpotAngle: 90
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -737,8 +775,8 @@ GameObject:
   - 4: {fileID: 652175303}
   - 108: {fileID: 652175304}
   m_Layer: 8
-  m_Name: Spotlight
-  m_TagString: Untagged
+  m_Name: Spotlight Back
+  m_TagString: chicken_god spotlight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -750,7 +788,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 652175302}
   m_LocalRotation: {x: .382683486, y: 0, z: 0, w: -.923879504}
-  m_LocalPosition: {x: 0, y: -.393999994, z: -.995999992}
+  m_LocalPosition: {x: 0, y: -.493000001, z: -.897000015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 175250544}
@@ -765,7 +803,7 @@ Light:
   serializedVersion: 3
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 6
+  m_Intensity: 8
   m_Range: 40
   m_SpotAngle: 70
   m_CookieSize: 10
@@ -790,6 +828,90 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!1 &663364409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 663364414}
+  - 20: {fileID: 663364413}
+  - 124: {fileID: 663364412}
+  - 92: {fileID: 663364411}
+  - 81: {fileID: 663364410}
+  m_Layer: 0
+  m_Name: Camera3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &663364410
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 663364409}
+  m_Enabled: 1
+--- !u!92 &663364411
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 663364409}
+  m_Enabled: 1
+--- !u!124 &663364412
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 663364409}
+  m_Enabled: 1
+--- !u!20 &663364413
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 663364409}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
+--- !u!4 &663364414
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 663364409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 73.5999985, y: 36.9000015, z: -60.4000015}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
 --- !u!1001 &720111059
 Prefab:
   m_ObjectHideFlags: 0
@@ -2492,7 +2614,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 1
-  m_Color: {r: .848356426, g: .852941155, b: .520544946, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: .200000003
   m_Range: 10
   m_SpotAngle: 30
@@ -2555,7 +2677,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 1
-  m_Color: {r: .985294104, g: .916543424, b: .362240404, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: .200000003
   m_Range: 10
   m_SpotAngle: 30
@@ -2895,6 +3017,90 @@ Prefab:
   m_RootGameObject: {fileID: 1179275530}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1627017416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1627017421}
+  - 20: {fileID: 1627017420}
+  - 124: {fileID: 1627017419}
+  - 92: {fileID: 1627017418}
+  - 81: {fileID: 1627017417}
+  m_Layer: 0
+  m_Name: Camera2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1627017417
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627017416}
+  m_Enabled: 1
+--- !u!92 &1627017418
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627017416}
+  m_Enabled: 1
+--- !u!124 &1627017419
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627017416}
+  m_Enabled: 1
+--- !u!20 &1627017420
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627017416}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
+--- !u!4 &1627017421
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627017416}
+  m_LocalRotation: {x: -.0641044825, y: .890228271, z: .1323715, w: .431117237}
+  m_LocalPosition: {x: 17.6749992, y: .959999979, z: 61.5270004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
 --- !u!1 &1686348207
 GameObject:
   m_ObjectHideFlags: 0
@@ -2905,7 +3111,6 @@ GameObject:
   - 4: {fileID: 1686348213}
   - 33: {fileID: 1686348212}
   - 23: {fileID: 1686348211}
-  - 95: {fileID: 1686348210}
   - 65: {fileID: 1686348209}
   - 114: {fileID: 1686348208}
   m_Layer: 8
@@ -2935,27 +3140,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 2933546}
   m_GameObject: {fileID: 1686348207}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: .00570264459, y: .0487139821, z: .149395466}
---- !u!95 &1686348210
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9500000, guid: d175956860b3d264482973be3c915acf,
-    type: 2}
-  m_PrefabInternal: {fileID: 2933546}
-  m_GameObject: {fileID: 1686348207}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ddae715d563a74848b22fb852104f764, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Size: {x: 1, y: 1.14639759, z: 1.29784489}
+  m_Center: {x: .00570259104, y: .12191277, z: .0913412571}
 --- !u!23 &1686348211
 Renderer:
   m_ObjectHideFlags: 0
@@ -3207,6 +3396,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfGoldChickenFound: 0
   particles: {fileID: 784290348}
+  godSpotlightActivationOrder:
+  - Back
+  - Top
+  - Left
+  - Right
+  - Front
 --- !u!1 &1865525610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3221,6 +3416,7 @@ GameObject:
   - 81: {fileID: 1865525611}
   - 45: {fileID: 1865525616}
   - 114: {fileID: 1865525617}
+  - 114: {fileID: 1865525618}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3318,6 +3514,20 @@ MonoBehaviour:
   cameraHeight: 1.5
   cameraMinDistance: 3
   cameraMaxDistance: 15
+--- !u!114 &1865525618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1865525610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604d2da4a2e326a4499bf10b6a88299d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1865525614}
+  camera2: {fileID: 1627017420}
+  camera3: {fileID: 663364413}
 --- !u!1 &1875963849
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,8 +3538,8 @@ GameObject:
   - 4: {fileID: 1875963850}
   - 108: {fileID: 1875963851}
   m_Layer: 8
-  m_Name: Spotlight
-  m_TagString: Untagged
+  m_Name: Spotlight Left
+  m_TagString: chicken_god spotlight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3341,7 +3551,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1875963849}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: -.707106829}
-  m_LocalPosition: {x: -.419, y: -.63499999, z: .0109999999}
+  m_LocalPosition: {x: -.340999991, y: -.63499999, z: .0109999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 175250544}
@@ -3356,7 +3566,7 @@ Light:
   serializedVersion: 3
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 6
+  m_Intensity: 8
   m_Range: 40
   m_SpotAngle: 70
   m_CookieSize: 10
@@ -3392,7 +3602,7 @@ GameObject:
   - 33: {fileID: 1925114314}
   - 65: {fileID: 1925114313}
   - 23: {fileID: 1925114312}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: pedestal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3441,7 +3651,7 @@ BoxCollider:
   m_GameObject: {fileID: 1925114310}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3536,6 +3746,69 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2025843962}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2062730388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2062730389}
+  - 108: {fileID: 2062730390}
+  m_Layer: 8
+  m_Name: Spotlight Front
+  m_TagString: chicken_god spotlight
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2062730389
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062730388}
+  m_LocalRotation: {x: .984807789, y: 0, z: 0, w: .173648238}
+  m_LocalPosition: {x: 0, y: .69599998, z: 1.21899998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 175250544}
+  m_RootOrder: 6
+--- !u!108 &2062730390
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062730388}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 8
+  m_Range: 50
+  m_SpotAngle: 80
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &2124298309
 GameObject:
   m_ObjectHideFlags: 0

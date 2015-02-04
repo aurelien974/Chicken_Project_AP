@@ -56,7 +56,11 @@ public class ballMovement : MonoBehaviour {
 
 			if(Mathf.Abs (Input.GetAxis("Vertical")) > 0.2) {
 
-				rigidbody.AddForce(chickenTransform.forward * Input.GetAxis ("Vertical")* playerSpeedForce);
+                if ((rigidbody.velocity.magnitude > 0.5 && Input.GetAxis("Vertical") <= 0.2) || Input.GetAxis("Vertical") > 0.2)
+                {
+                    rigidbody.AddForce(chickenTransform.forward * Input.GetAxis("Vertical") * playerSpeedForce);
+
+                }
 
 			}
 

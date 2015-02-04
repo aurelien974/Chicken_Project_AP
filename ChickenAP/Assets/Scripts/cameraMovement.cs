@@ -10,6 +10,7 @@ public class cameraMovement : MonoBehaviour {
 	public float cameraMinDistance = 3.0f;
 	public float cameraMaxDistance = 15.0f;
 	private ballMovement ballMovementScript;
+    private Quaternion wantedRot;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +27,15 @@ public class cameraMovement : MonoBehaviour {
 	void LateUpdate () {
 
 		// Calculate the current rotation angles
-		Quaternion wantedRot = Quaternion.LookRotation(ballTransform.rigidbody.velocity);
+        if (ballTransform.rigidbody.velocity != Vector3.zero)
+        {
+            wantedRot = Quaternion.LookRotation(ballTransform.rigidbody.velocity);
+        }
+        else
+        {
+            wantedRot = chickenTransform.rotation;
+        }
+		
 		float wantedRotationAngleY = wantedRot.eulerAngles.y;
 		float wantedRotationAngleX = wantedRot.eulerAngles.x;
 		float wantedRotationAngleZ = wantedRot.eulerAngles.z;
@@ -42,6 +51,7 @@ public class cameraMovement : MonoBehaviour {
 
 		// Convert the angle into a rotation
 		Quaternion currentRotation = Quaternion.Euler (currentRotationAngleX, currentRotationAngleY, currentRotationAngleZ);
+        //Quaternion currentRotation = Quaternion.Euler(wantedRotationAngleX, wantedRotationAngleY, wantedRotationAngleZ);
 
 		transform.position = chickenTransform.position;
 
