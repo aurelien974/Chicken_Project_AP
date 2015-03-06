@@ -465,7 +465,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 2000
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -696,7 +696,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 2000
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -890,7 +890,7 @@ Transform:
   m_Children:
   - {fileID: 1500449799}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!1 &652175302
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,7 +972,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 2000
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -2287,7 +2287,7 @@ Transform:
   m_Children:
   - {fileID: 1234765212}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!1 &986423253
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,6 +2536,7 @@ GameObject:
   - 95: {fileID: 1163056908}
   - 65: {fileID: 1163056909}
   - 114: {fileID: 1163056910}
+  - 82: {fileID: 1163056911}
   m_Layer: 0
   m_Name: chicken_gold
   m_TagString: gold chicken
@@ -2625,6 +2626,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bca8f7512826f7844aa1f395fdab7602, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1163056911
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1163056904}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: a5e75d27cde302d47878bf00c8fa89f4, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .800000012
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 100
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00999999978
+      value: 1
+      inSlope: 0
+      outSlope: -1.01010096
+      tangentMode: 0
+    - time: .271329641
+      value: .411575347
+      inSlope: -1.01000071
+      outSlope: -1.01000071
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: -1.01010096
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1173349155
 GameObject:
   m_ObjectHideFlags: 0
@@ -2652,7 +2716,7 @@ Transform:
   m_Children:
   - {fileID: 1163056907}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1 &1179275530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,7 +2999,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
 --- !u!1 &1480914780
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,7 +4059,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 2000
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -4272,7 +4336,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 2000
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
