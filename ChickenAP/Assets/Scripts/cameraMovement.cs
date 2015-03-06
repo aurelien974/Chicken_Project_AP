@@ -11,16 +11,24 @@ public class cameraMovement : MonoBehaviour {
 	public float cameraMaxDistance = 15.0f;
 	private ballMovement ballMovementScript;
     private Quaternion wantedRot;
+    private AudioSource wind;
+    public float windMinVolume = 0.5f;
+    public float windMaxVolume = 1.0f;
+    public float windMinPitch = 0.5f;
+    public float windMaxPitch = 4.0f;
 
 	// Use this for initialization
 	void Start () {
 
 		ballMovementScript = ballTransform.GetComponent<ballMovement>();
-
+        wind = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        wind.volume = windMinVolume + (windMaxVolume - windMinVolume) * ballTransform.rigidbody.velocity.magnitude / ballMovementScript.maxSpeed;
+        wind.pitch = windMinPitch + (windMaxPitch - windMinPitch) * ballTransform.rigidbody.velocity.magnitude / ballMovementScript.maxSpeed;
 
 	}
 

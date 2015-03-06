@@ -161,6 +161,14 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: d175956860b3d264482973be3c915acf, type: 2}
+      propertyPath: m_TagString
+      value: chicken_god colliders
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: d175956860b3d264482973be3c915acf, type: 2}
+      propertyPath: m_TagString
+      value: chicken_god colliders
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: d175956860b3d264482973be3c915acf, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d175956860b3d264482973be3c915acf, type: 2}
@@ -385,6 +393,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 151152706}
   - 108: {fileID: 151152707}
+  - 82: {fileID: 151152708}
   m_Layer: 8
   m_Name: Spotlight Right
   m_TagString: chicken_god spotlight
@@ -439,6 +448,64 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!82 &151152708
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 151152705}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 9777d5e082879124d93fdfbb09a92723, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &175250543
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,6 +624,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 344073256}
   - 108: {fileID: 344073257}
+  - 82: {fileID: 344073258}
   m_Layer: 8
   m_Name: Spotlight Top
   m_TagString: chicken_god spotlight
@@ -611,6 +679,64 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!82 &344073258
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 344073255}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 9777d5e082879124d93fdfbb09a92723, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &376530656
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +900,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 652175303}
   - 108: {fileID: 652175304}
+  - 82: {fileID: 652175305}
   m_Layer: 8
   m_Name: Spotlight Back
   m_TagString: chicken_god spotlight
@@ -828,6 +955,64 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!82 &652175305
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 652175302}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 9777d5e082879124d93fdfbb09a92723, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &663364409
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,6 +1025,7 @@ GameObject:
   - 124: {fileID: 663364412}
   - 92: {fileID: 663364411}
   - 81: {fileID: 663364410}
+  - 45: {fileID: 663364415}
   m_Layer: 0
   m_Name: Camera3
   m_TagString: Untagged
@@ -912,6 +1098,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
+--- !u!45 &663364415
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 663364409}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 7603743a298a60d4ea8f10bdb0f0b303, type: 2}
 --- !u!1001 &720111059
 Prefab:
   m_ObjectHideFlags: 0
@@ -3029,6 +3223,7 @@ GameObject:
   - 124: {fileID: 1627017419}
   - 92: {fileID: 1627017418}
   - 81: {fileID: 1627017417}
+  - 45: {fileID: 1627017422}
   m_Layer: 0
   m_Name: Camera2
   m_TagString: Untagged
@@ -3095,12 +3290,20 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1627017416}
-  m_LocalRotation: {x: -.0641044825, y: .890228271, z: .1323715, w: .431117237}
+  m_LocalRotation: {x: -.056251619, y: .863485634, z: .135894641, w: .482453048}
   m_LocalPosition: {x: 17.6749992, y: .959999979, z: 61.5270004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
+--- !u!45 &1627017422
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627017416}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 7603743a298a60d4ea8f10bdb0f0b303, type: 2}
 --- !u!1 &1686348207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3115,7 +3318,7 @@ GameObject:
   - 114: {fileID: 1686348208}
   m_Layer: 8
   m_Name: chicken_GOD
-  m_TagString: gold chicken
+  m_TagString: chicken_god colliders
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3263,6 +3466,8 @@ GameObject:
   - 114: {fileID: 1830933683}
   - 114: {fileID: 1830933688}
   - 114: {fileID: 1830933689}
+  - 82: {fileID: 1830933690}
+  - 82: {fileID: 1830933691}
   m_Layer: 0
   m_Name: SphereExt
   m_TagString: Untagged
@@ -3277,7 +3482,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1830933681}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -70, y: 10, z: -33}
+  m_LocalPosition: {x: 17, y: 10, z: 61}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 2025843963}
@@ -3306,6 +3511,7 @@ MonoBehaviour:
   respawnPoint: {fileID: 1467823685}
   playerAnimator: {fileID: 1114465983}
   chickenTransform: {fileID: 1114465982}
+  collisionSound: {fileID: 1830933691}
 --- !u!54 &1830933684
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3396,12 +3602,129 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfGoldChickenFound: 0
   particles: {fileID: 784290348}
+  chickenCrow: {fileID: 1830933690}
   godSpotlightActivationOrder:
   - Back
   - Top
   - Left
   - Right
   - Front
+--- !u!82 &1830933690
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1830933681}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: dd026404bf52a044780687f5ddacb07e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!82 &1830933691
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1830933681}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: c597304d937956d42940d30fe06b698b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1865525610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,6 +3740,7 @@ GameObject:
   - 45: {fileID: 1865525616}
   - 114: {fileID: 1865525617}
   - 114: {fileID: 1865525618}
+  - 82: {fileID: 1865525619}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3514,6 +3838,10 @@ MonoBehaviour:
   cameraHeight: 1.5
   cameraMinDistance: 3
   cameraMaxDistance: 15
+  windMinVolume: .200000003
+  windMaxVolume: 1
+  windMinPitch: .5
+  windMaxPitch: 4
 --- !u!114 &1865525618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3528,6 +3856,64 @@ MonoBehaviour:
   mainCamera: {fileID: 1865525614}
   camera2: {fileID: 1627017420}
   camera3: {fileID: 663364413}
+--- !u!82 &1865525619
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1865525610}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: f9a9f45050ab52342b962f59a1e457e6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .200000003
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1875963849
 GameObject:
   m_ObjectHideFlags: 0
@@ -3537,6 +3923,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1875963850}
   - 108: {fileID: 1875963851}
+  - 82: {fileID: 1875963852}
   m_Layer: 8
   m_Name: Spotlight Left
   m_TagString: chicken_god spotlight
@@ -3591,6 +3978,64 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!82 &1875963852
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1875963849}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 9777d5e082879124d93fdfbb09a92723, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1925114310
 GameObject:
   m_ObjectHideFlags: 0
@@ -3604,7 +4049,7 @@ GameObject:
   - 23: {fileID: 1925114312}
   m_Layer: 0
   m_Name: pedestal
-  m_TagString: Untagged
+  m_TagString: chicken_god colliders
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3755,6 +4200,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2062730389}
   - 108: {fileID: 2062730390}
+  - 82: {fileID: 2062730391}
   m_Layer: 8
   m_Name: Spotlight Front
   m_TagString: chicken_god spotlight
@@ -3809,6 +4255,64 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!82 &2062730391
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062730388}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 9777d5e082879124d93fdfbb09a92723, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &2124298309
 GameObject:
   m_ObjectHideFlags: 0

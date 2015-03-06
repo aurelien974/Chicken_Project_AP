@@ -10,6 +10,8 @@ public class goldChicken : MonoBehaviour {
 
 	public ParticleSystem particles;
 
+    public AudioSource chickenCrow;
+
 	public string[] godSpotlightActivationOrder;
 
 	private GameObject[] godChickenSpotlights;
@@ -55,11 +57,12 @@ public class goldChicken : MonoBehaviour {
 			if(numberOfGoldChickenFound <= godSpotlightActivationOrder.Length) {
 
 				GameObject.Find ("Spotlight " + godSpotlightActivationOrder[numberOfGoldChickenFound-1]).light.enabled = true;
-
+                GameObject.Find("Spotlight " + godSpotlightActivationOrder[numberOfGoldChickenFound - 1]).audio.Play();
 			}
 
 			col.gameObject.GetComponent<Animator>().SetBool("collected", true);
 			col.gameObject.collider.enabled = false;
+            chickenCrow.Play();
 
 		}
 

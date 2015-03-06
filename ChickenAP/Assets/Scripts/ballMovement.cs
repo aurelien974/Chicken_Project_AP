@@ -23,6 +23,8 @@ public class ballMovement : MonoBehaviour {
 
 	private particlesGeneration particlesScript;
 
+    public AudioSource collisionSound;
+
 	void Start () {
 
 		distToGround = collider.bounds.extents.y;
@@ -95,4 +97,16 @@ public class ballMovement : MonoBehaviour {
 		}
 
 	}
+
+    void OnCollisionEnter(Collision col)
+    {
+
+        if (col.gameObject.tag == "chicken_god colliders")
+        {
+
+            collisionSound.Play();
+
+        }
+
+    }
 }
